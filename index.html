@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home / SPACBox</title>
+  <style>
+    @font-face {
+      font-family: 'Neue Montreal';
+      src: url('NeueMontreal-Regular.ttf');
+    }
+    @font-face {
+      font-family: 'Amazon';
+      src: url('AmazonEmber_Lt.ttf');
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 7.2%;
+      background-color: #ebe5ed;
+      z-index: 9999; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Amazon";
+    }
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+      color: #333; /* Change this to your desired text color */
+    }
+
+    /* Adjust the iframe to cover the entire page */
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Hide any overflow content in the iframe */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1; /* Place iframe content behind the header */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fixed header occupying top 6% of the screen -->
+  <header>
+    <h1>Opening Soon</h1>
+  </header>
+
+  <!-- Embedding the iframe -->
+  <iframe src="https://gonavin.wixsite.com/spacbox"></iframe>
+
+</body>
+</html>
